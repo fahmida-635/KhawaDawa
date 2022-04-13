@@ -1,0 +1,56 @@
+.about-area{
+    .about-content{
+        p {
+        margin-bottom: 30px;
+        }
+    }
+    .about-gallery {
+    position: relative;
+    @include min-xs{
+        margin-top: 20px;
+    }
+    @include min-sm{
+        margin-top: 30px;
+    }
+    @include min-lg{
+        margin-top: 60px;
+    }
+        img {
+            border: 1px solid $gray;
+            &:nth-child(1) {
+                max-width: 400px;
+                @include min-xs{
+                    width: 100%;
+                }
+            }
+            &:nth-child(2) {
+                position: absolute;
+                right: 80px;
+                bottom: -80px;
+                max-width: 370px;
+                @include min-xs{
+                    width: 100%;
+                    position: inherit;
+                    margin-top: 20px;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+
+    .about-page-img {
+        img {
+            border: 1px solid $gray;
+            padding: 3px;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+    }
+    .about-page-content {
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}
+
